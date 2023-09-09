@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 20 20:45:36 2023
+# Process ID: 3820
+# Current directory: C:/Users/alija/Audio/Audio.runs/BD_Moving_average_filter_0_0_synth_1
+# Command line: vivado.exe -log BD_Moving_average_filter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_Moving_average_filter_0_0.tcl
+# Log file: C:/Users/alija/Audio/Audio.runs/BD_Moving_average_filter_0_0_synth_1/BD_Moving_average_filter_0_0.vds
+# Journal file: C:/Users/alija/Audio/Audio.runs/BD_Moving_average_filter_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source BD_Moving_average_filter_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top BD_Moving_average_filter_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'BD_Moving_average_filter_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13392
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1014.965 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BD_Moving_average_filter_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Moving_average_filter_0_0/synth/BD_Moving_average_filter_0_0.vhd:72]
+	Parameter FILTER_SAMPLES bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Moving_average_filter' declared at 'C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:6' bound to instance 'U0' of component 'Moving_average_filter' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Moving_average_filter_0_0/synth/BD_Moving_average_filter_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'Moving_average_filter' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:28]
+	Parameter FILTER_SAMPLES bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Moving_average_filter' (1#1) [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'BD_Moving_average_filter_0_0' (2#1) [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Moving_average_filter_0_0/synth/BD_Moving_average_filter_0_0.vhd:72]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1014.965 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.965 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.965 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1014.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1060.258 ; gain = 0.008
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'Moving_average_filter'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'Moving_average_filter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              010 |                               00
+              transmit_l |                              100 |                               01
+              transmit_r |                              001 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'one-hot' in module 'Moving_average_filter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               receive_l |                               01 |                               01
+               receive_r |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'Moving_average_filter'
+WARNING: [Synth 8-327] inferring latch for variable 'm_axis_tdata_reg' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[1]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[2]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[3]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[4]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[5]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[6]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[7]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[8]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[9]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[10]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[11]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[12]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[13]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[14]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[15]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[16]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[17]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[18]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[19]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[20]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[21]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[22]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[23]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[24]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[25]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[26]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[27]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[28]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[29]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[30]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[31]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'r_sample_reg[0]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[1]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[2]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[3]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[4]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[5]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[6]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[7]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[8]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[9]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[10]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[11]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[12]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[13]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[14]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[15]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[16]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[17]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[18]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[19]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[20]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[21]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[22]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[23]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[24]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[25]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[26]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[27]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[28]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[29]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[30]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[31]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'l_sample_reg[0]' [C:/Users/alija/Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd:64]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  32 Input   31 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 99    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1060.258 ; gain = 45.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1074.383 ; gain = 59.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   218|
+|2     |LUT1   |     1|
+|3     |LUT2   |     9|
+|4     |LUT3   |   787|
+|5     |LUT4   |   668|
+|6     |LUT5   |    56|
+|7     |LUT6   |   162|
+|8     |FDRE   |    58|
+|9     |LD     |  1536|
+|10    |LDC    |    24|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 1087.980 ; gain = 27.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.980 ; gain = 73.016
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1100.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1778 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'BD_Moving_average_filter_0_0' is not ideal for floorplanning, since the cellview 'Moving_average_filter' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1100.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1560 instances were transformed.
+  LD => LDCE: 1536 instances
+  LDC => LDCE: 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1100.062 ; gain = 85.098
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alija/Audio/Audio.runs/BD_Moving_average_filter_0_0_synth_1/BD_Moving_average_filter_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alija/Audio/Audio.runs/BD_Moving_average_filter_0_0_synth_1/BD_Moving_average_filter_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BD_Moving_average_filter_0_0_utilization_synth.rpt -pb BD_Moving_average_filter_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 20 20:47:10 2023...

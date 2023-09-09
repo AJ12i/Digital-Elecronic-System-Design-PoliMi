@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1684608330">
+  <File Type="PA-TCL" Name="BD_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="BD_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="BD_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="BD_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="BD_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="BD_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/manager_hdl/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/MS Electronics/Second Semester/DESD/Labs/Lab 2/Intro/manager_hdl/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1587136118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/manager_hdl/edge_detector.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/MS Electronics/Second Semester/DESD/Labs/Lab 2/Intro/manager_hdl/edge_detector.vhd"/>
+        <Attr Name="ImportTime" Val="1587136610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/digilent_jstk2_encrypted.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/digilent_jstk2_encrypted.vhd"/>
+        <Attr Name="ImportTime" Val="1683544530"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mute_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/new/mute_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1684438350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Toggle_reg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/new/Toggle_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1684438514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/led_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/new/led_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1684607300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/volume_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/new/volume_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1684607901"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/balance_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/new/balance_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1684607905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/moving_average_filter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/new/moving_average_filter.vhd"/>
+        <Attr Name="ImportTime" Val="1684608152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/BD/BD.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/sources_1/bd/BD/BD.bd"/>
+        <Attr Name="ImportTime" Val="1684608768"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/BD_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1684608315"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="BD_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/pins.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Audio/Audio.srcs/constrs_1/new/pins.xdc"/>
+        <Attr Name="ImportTime" Val="1684004455"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="BD_digilent_jstk2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_Moving_average_filter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_Toggle_reg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_edge_detector_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_debouncer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_edge_detector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_debouncer_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_LED_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_Mute_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_Toggle_reg_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_Volume_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_Balance_controller_0_0"/>
+</GenRun>

@@ -1,0 +1,417 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 20 20:22:41 2023
+# Process ID: 15148
+# Current directory: C:/Users/alija/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14460
+# Log file: C:/Users/alija/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/alija/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alija/Audio/Audio.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.699 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_module_reference BD_Balance_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+Reading block design file <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_1
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_1
+Adding component instance block -- xilinx.com:module_ref:digilent_jstk2:1.0 - digilent_jstk2_0
+Adding component instance block -- DigiLAB:ip:axi4stream_spi_master:1.0 - axi4stream_spi_master_0
+Adding component instance block -- DigiLAB:ip:axis_dual_i2s:1.0 - axis_dual_i2s_0
+Adding component instance block -- xilinx.com:module_ref:Mute_controller:1.0 - Mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:Toggle_reg:1.0 - Toggle_reg_0
+Adding component instance block -- xilinx.com:module_ref:Toggle_reg:1.0 - Toggle_reg_1
+Adding component instance block -- xilinx.com:module_ref:LED_controller:1.0 - LED_controller_0
+Adding component instance block -- xilinx.com:module_ref:Volume_controller:1.0 - Volume_controller_0
+Adding component instance block -- xilinx.com:module_ref:Balance_controller:1.0 - Balance_controller_0
+Adding component instance block -- xilinx.com:module_ref:Moving_average_filter:1.0 - Moving_average_filter_0
+Successfully read diagram <BD> from block design file <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd>
+Upgrading 'C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd'
+INFO: [IP_Flow 19-1972] Upgraded BD_Balance_controller_0_0 from Balance_controller_v1_0 1.0 to Balance_controller_v1_0 1.0
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+upgrade_ip: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1057.281 ; gain = 39.582
+update_module_reference: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1057.281 ; gain = 39.582
+update_module_reference BD_Volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+Upgrading 'C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd'
+INFO: [IP_Flow 19-1972] Upgraded BD_Volume_controller_0_0 from Volume_controller_v1_0 1.0 to Volume_controller_v1_0 1.0
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+update_module_reference: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1058.902 ; gain = 1.621
+update_module_reference BD_LED_controller_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+Upgrading 'C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd'
+INFO: [IP_Flow 19-1972] Upgraded BD_LED_controller_0_0 from LED_controller_v1_0 1.0 to LED_controller_v1_0 1.0
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.160 ; gain = 1.258
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /axi4stream_spi_master_0/aclk have been updated from connected ip, but BD cell '/axi4stream_spi_master_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </axi4stream_spi_master_0> to completely resolve these warnings.
+save_bd_design
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'BD.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+VHDL Output written to : c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd
+VHDL Output written to : c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/sim/BD.vhd
+VHDL Output written to : c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LED_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Volume_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Balance_controller_0 .
+Exporting to file c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hw_handoff/BD.hwh
+Generated Block Design Tcl file c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hw_handoff/BD_bd.tcl
+Generated Hardware Definition File c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.hwdef
+[Sat May 20 20:31:10 2023] Launched BD_Volume_controller_0_0_synth_1, BD_Balance_controller_0_0_synth_1, BD_LED_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+BD_Volume_controller_0_0_synth_1: C:/Users/alija/Audio/Audio.runs/BD_Volume_controller_0_0_synth_1/runme.log
+BD_Balance_controller_0_0_synth_1: C:/Users/alija/Audio/Audio.runs/BD_Balance_controller_0_0_synth_1/runme.log
+BD_LED_controller_0_0_synth_1: C:/Users/alija/Audio/Audio.runs/BD_LED_controller_0_0_synth_1/runme.log
+synth_1: C:/Users/alija/Audio/Audio.runs/synth_1/runme.log
+[Sat May 20 20:31:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/alija/Audio/Audio.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 1232.988 ; gain = 145.391
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1288.148 ; gain = 14.969
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A6F6A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2847.426 ; gain = 1559.277
+set_property PROGRAM.FILE {C:/Users/alija/Audio/Audio.runs/impl_1/BD_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/alija/Audio/Audio.runs/impl_1/BD_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_module_reference BD_Volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+Upgrading 'C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd'
+INFO: [IP_Flow 19-1972] Upgraded BD_Volume_controller_0_0 from Volume_controller_v1_0 1.0 to Volume_controller_v1_0 1.0
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+update_module_reference BD_Balance_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+Upgrading 'C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd'
+INFO: [IP_Flow 19-1972] Upgraded BD_Balance_controller_0_0 from Balance_controller_v1_0 1.0 to Balance_controller_v1_0 1.0
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+update_module_reference: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2932.840 ; gain = 0.000
+update_module_reference BD_Moving_average_filter_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+Upgrading 'C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/BD.bd'
+INFO: [IP_Flow 19-1972] Upgraded BD_Moving_average_filter_0_0 from Moving_average_filter_v1_0 1.0 to Moving_average_filter_v1_0 1.0
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2932.840 ; gain = 0.000
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /axi4stream_spi_master_0/aclk have been updated from connected ip, but BD cell '/axi4stream_spi_master_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	PHASE = 0.0 
+Please resolve any mismatches by directly setting properties on BD cell </axi4stream_spi_master_0> to completely resolve these warnings.
+save_bd_design
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'BD.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\alija\Audio\Audio.srcs\sources_1\bd\BD\BD.bd> 
+Wrote  : <C:/Users/alija/Audio/Audio.srcs/sources_1/bd/BD/ui/bd_206cfb42.ui> 
+VHDL Output written to : c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd
+VHDL Output written to : c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/sim/BD.vhd
+VHDL Output written to : c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Volume_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Balance_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Moving_average_filter_0 .
+Exporting to file c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hw_handoff/BD.hwh
+Generated Block Design Tcl file c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hw_handoff/BD_bd.tcl
+Generated Hardware Definition File c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.hwdef
+[Sat May 20 20:45:31 2023] Launched BD_Volume_controller_0_0_synth_1, BD_Balance_controller_0_0_synth_1, BD_Moving_average_filter_0_0_synth_1, synth_1...
+Run output will be captured here:
+BD_Volume_controller_0_0_synth_1: C:/Users/alija/Audio/Audio.runs/BD_Volume_controller_0_0_synth_1/runme.log
+BD_Balance_controller_0_0_synth_1: C:/Users/alija/Audio/Audio.runs/BD_Balance_controller_0_0_synth_1/runme.log
+BD_Moving_average_filter_0_0_synth_1: C:/Users/alija/Audio/Audio.runs/BD_Moving_average_filter_0_0_synth_1/runme.log
+synth_1: C:/Users/alija/Audio/Audio.runs/synth_1/runme.log
+[Sat May 20 20:45:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/alija/Audio/Audio.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 2932.840 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2944.566 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A6F6A
+set_property PROGRAM.FILE {C:/Users/alija/Audio/Audio.runs/impl_1/BD_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/alija/Audio/Audio.runs/impl_1/BD_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+archive_project C:/Users/alija/Audio_PROJECT.xpr.zip -temp_dir C:/Users/alija/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15148-DESKTOP-AVPI1T7 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/alija/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15148-DESKTOP-AVPI1T7' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/alija/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15148-DESKTOP-AVPI1T7/PrjAr/_X_'.
+WARNING: [IP_Flow 19-3571] IP 'BD_Toggle_reg_1_0' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'BD_debouncer_1_0' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'BD_edge_detector_1_0' is restricted:
+* Module reference is stale and needs refreshing.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_digilent_jstk2_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_edge_detector_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_edge_detector_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_clk_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_debouncer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_debouncer_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_Toggle_reg_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_Toggle_reg_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_Mute_controller_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_LED_controller_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_Volume_controller_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_Balance_controller_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'BD_Moving_average_filter_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'BD_digilent_jstk2_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_edge_detector_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_edge_detector_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_debouncer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_debouncer_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_Toggle_reg_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_Toggle_reg_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_Mute_controller_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_LED_controller_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_Volume_controller_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_Balance_controller_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BD_Moving_average_filter_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_Balance_controller_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_Balance_controller_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_LED_controller_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_LED_controller_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_Moving_average_filter_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_Moving_average_filter_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_Mute_controller_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_Mute_controller_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_Toggle_reg_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_Toggle_reg_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_Toggle_reg_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_Toggle_reg_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_Volume_controller_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_Volume_controller_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_debouncer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_debouncer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_debouncer_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_debouncer_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_digilent_jstk2_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_digilent_jstk2_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_edge_detector_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_edge_detector_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BD_edge_detector_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BD_edge_detector_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

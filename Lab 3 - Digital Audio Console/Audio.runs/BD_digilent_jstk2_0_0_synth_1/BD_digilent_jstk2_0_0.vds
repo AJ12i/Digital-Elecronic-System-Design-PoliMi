@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 18 18:16:39 2023
+# Process ID: 16160
+# Current directory: C:/Users/alija/Audio/Audio.runs/BD_digilent_jstk2_0_0_synth_1
+# Command line: vivado.exe -log BD_digilent_jstk2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_digilent_jstk2_0_0.tcl
+# Log file: C:/Users/alija/Audio/Audio.runs/BD_digilent_jstk2_0_0_synth_1/BD_digilent_jstk2_0_0.vds
+# Journal file: C:/Users/alija/Audio/Audio.runs/BD_digilent_jstk2_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source BD_digilent_jstk2_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top BD_digilent_jstk2_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'BD_digilent_jstk2_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5644
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BD_digilent_jstk2_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_digilent_jstk2_0_0/synth/BD_digilent_jstk2_0_0.vhd:75]
+	Parameter DELAY_US bound to: 25 - type: integer 
+	Parameter CLKFREQ bound to: 200000000 - type: integer 
+	Parameter SPI_SCLKFREQ bound to: 5000 - type: integer 
+INFO: [Synth 8-3491] module 'digilent_jstk2' declared at 'C:/Users/alija/Audio/Audio.srcs/sources_1/imports/Downloads/digilent_jstk2_encrypted.vhd:4' bound to instance 'U0' of component 'digilent_jstk2' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_digilent_jstk2_0_0/synth/BD_digilent_jstk2_0_0.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'BD_digilent_jstk2_0_0' (2#1) [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_digilent_jstk2_0_0/synth/BD_digilent_jstk2_0_0.vhd:75]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1015.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1015.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1047.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1047.055 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_cmd_reg' in module 'digilent_jstk2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_sts_reg' in module 'digilent_jstk2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              wait_delay |                              000 |                              000
+                send_cmd |                              001 |                              001
+                send_red |                              010 |                              010
+              send_green |                              011 |                              011
+               send_blue |                              100 |                              100
+              send_dummy |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_cmd_reg' using encoding 'sequential' in module 'digilent_jstk2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               get_x_lsb |                              000 |                              000
+               get_x_msb |                              001 |                              001
+               get_y_lsb |                              010 |                              010
+               get_y_msb |                              011 |                              011
+             get_buttons |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_sts_reg' using encoding 'sequential' in module 'digilent_jstk2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input   10 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 4     
+	   6 Input    8 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1047.055 ; gain = 31.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1058.215 ; gain = 42.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT1   |     2|
+|3     |LUT2   |    15|
+|4     |LUT3   |     3|
+|5     |LUT4   |     9|
+|6     |LUT5   |    10|
+|7     |LUT6   |     8|
+|8     |FDRE   |    64|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1065.461 ; gain = 50.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 1065.461 ; gain = 18.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1065.461 ; gain = 50.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1077.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1077.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 1077.512 ; gain = 62.156
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alija/Audio/Audio.runs/BD_digilent_jstk2_0_0_synth_1/BD_digilent_jstk2_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alija/Audio/Audio.runs/BD_digilent_jstk2_0_0_synth_1/BD_digilent_jstk2_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BD_digilent_jstk2_0_0_utilization_synth.rpt -pb BD_digilent_jstk2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 18 18:18:01 2023...

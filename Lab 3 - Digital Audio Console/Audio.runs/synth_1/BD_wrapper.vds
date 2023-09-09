@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 20 20:47:15 2023
+# Process ID: 19516
+# Current directory: C:/Users/alija/Audio/Audio.runs/synth_1
+# Command line: vivado.exe -log BD_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_wrapper.tcl
+# Log file: C:/Users/alija/Audio/Audio.runs/synth_1/BD_wrapper.vds
+# Journal file: C:/Users/alija/Audio/Audio.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BD_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/alija/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.605 ; gain = 0.000
+Command: synth_design -top BD_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19436
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BD_wrapper' [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:33]
+INFO: [Synth 8-3491] module 'BD' declared at 'c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:14' bound to instance 'BD_i' of component 'BD' [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'BD' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:45]
+INFO: [Synth 8-3491] module 'BD_Balance_controller_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Balance_controller_0_0_stub.vhdl:5' bound to instance 'Balance_controller_0' of component 'BD_Balance_controller_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:379]
+INFO: [Synth 8-638] synthesizing module 'BD_Balance_controller_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Balance_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'BD_LED_controller_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_LED_controller_0_0_stub.vhdl:5' bound to instance 'LED_controller_0' of component 'BD_LED_controller_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:393]
+INFO: [Synth 8-638] synthesizing module 'BD_LED_controller_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_LED_controller_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'BD_Moving_average_filter_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Moving_average_filter_0_0_stub.vhdl:5' bound to instance 'Moving_average_filter_0' of component 'BD_Moving_average_filter_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'BD_Moving_average_filter_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Moving_average_filter_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'BD_Mute_controller_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Mute_controller_0_0_stub.vhdl:5' bound to instance 'Mute_controller_0' of component 'BD_Mute_controller_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:415]
+INFO: [Synth 8-638] synthesizing module 'BD_Mute_controller_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Mute_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'BD_Toggle_reg_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Toggle_reg_0_0_stub.vhdl:5' bound to instance 'Toggle_reg_0' of component 'BD_Toggle_reg_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'BD_Toggle_reg_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Toggle_reg_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BD_Toggle_reg_1_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Toggle_reg_1_0_stub.vhdl:5' bound to instance 'Toggle_reg_1' of component 'BD_Toggle_reg_1_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:436]
+INFO: [Synth 8-638] synthesizing module 'BD_Toggle_reg_1_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Toggle_reg_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BD_Volume_controller_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Volume_controller_0_0_stub.vhdl:5' bound to instance 'Volume_controller_0' of component 'BD_Volume_controller_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'BD_Volume_controller_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_Volume_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'BD_axi4stream_spi_master_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_axi4stream_spi_master_0_0_stub.vhdl:5' bound to instance 'axi4stream_spi_master_0' of component 'BD_axi4stream_spi_master_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:457]
+INFO: [Synth 8-638] synthesizing module 'BD_axi4stream_spi_master_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_axi4stream_spi_master_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'BD_axis_dual_i2s_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_axis_dual_i2s_0_0_stub.vhdl:5' bound to instance 'axis_dual_i2s_0' of component 'BD_axis_dual_i2s_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'BD_axis_dual_i2s_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_axis_dual_i2s_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'BD_clk_wiz_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'BD_clk_wiz_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:502]
+INFO: [Synth 8-638] synthesizing module 'BD_clk_wiz_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'BD_debouncer_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_debouncer_0_0_stub.vhdl:5' bound to instance 'debouncer_0' of component 'BD_debouncer_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:510]
+INFO: [Synth 8-638] synthesizing module 'BD_debouncer_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_debouncer_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BD_debouncer_1_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_debouncer_1_0_stub.vhdl:5' bound to instance 'debouncer_1' of component 'BD_debouncer_1_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:517]
+INFO: [Synth 8-638] synthesizing module 'BD_debouncer_1_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_debouncer_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BD_digilent_jstk2_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_digilent_jstk2_0_0_stub.vhdl:5' bound to instance 'digilent_jstk2_0' of component 'BD_digilent_jstk2_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:524]
+INFO: [Synth 8-638] synthesizing module 'BD_digilent_jstk2_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_digilent_jstk2_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'BD_edge_detector_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_edge_detector_0_0_stub.vhdl:5' bound to instance 'edge_detector_0' of component 'BD_edge_detector_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:541]
+INFO: [Synth 8-638] synthesizing module 'BD_edge_detector_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_edge_detector_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BD_edge_detector_1_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_edge_detector_1_0_stub.vhdl:5' bound to instance 'edge_detector_1' of component 'BD_edge_detector_1_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:548]
+INFO: [Synth 8-638] synthesizing module 'BD_edge_detector_1_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_edge_detector_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BD_proc_sys_reset_0_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'BD_proc_sys_reset_0_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:555]
+INFO: [Synth 8-638] synthesizing module 'BD_proc_sys_reset_0_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'BD_proc_sys_reset_1_0' declared at 'C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_proc_sys_reset_1_0_stub.vhdl:5' bound to instance 'proc_sys_reset_1' of component 'BD_proc_sys_reset_1_0' [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:568]
+INFO: [Synth 8-638] synthesizing module 'BD_proc_sys_reset_1_0' [C:/Users/alija/Audio/Audio.runs/synth_1/.Xil/Vivado-19516-DESKTOP-AVPI1T7/realtime/BD_proc_sys_reset_1_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'BD' (1#1) [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/synth/BD.vhd:45]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io0_iobuf' of component 'IOBUF' [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:106]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_io1_iobuf' of component 'IOBUF' [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:113]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_sck_iobuf' of component 'IOBUF' [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:120]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_M_0_ss_iobuf' of component 'IOBUF' [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'BD_wrapper' (3#1) [C:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/hdl/BD_wrapper.vhd:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1015.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_clk_wiz_0_0/BD_clk_wiz_0_0/BD_clk_wiz_0_0_in_context.xdc] for cell 'BD_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_clk_wiz_0_0/BD_clk_wiz_0_0/BD_clk_wiz_0_0_in_context.xdc] for cell 'BD_i/clk_wiz_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_proc_sys_reset_0_0/BD_proc_sys_reset_0_0/BD_proc_sys_reset_0_0_in_context.xdc] for cell 'BD_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_proc_sys_reset_0_0/BD_proc_sys_reset_0_0/BD_proc_sys_reset_0_0_in_context.xdc] for cell 'BD_i/proc_sys_reset_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_proc_sys_reset_1_0/BD_proc_sys_reset_1_0/BD_proc_sys_reset_1_0_in_context.xdc] for cell 'BD_i/proc_sys_reset_1'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_proc_sys_reset_1_0/BD_proc_sys_reset_1_0/BD_proc_sys_reset_1_0_in_context.xdc] for cell 'BD_i/proc_sys_reset_1'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_debouncer_0_0/BD_debouncer_0_0/BD_debouncer_0_0_in_context.xdc] for cell 'BD_i/debouncer_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_debouncer_0_0/BD_debouncer_0_0/BD_debouncer_0_0_in_context.xdc] for cell 'BD_i/debouncer_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_debouncer_1_0/BD_debouncer_1_0/BD_debouncer_1_0_in_context.xdc] for cell 'BD_i/debouncer_1'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_debouncer_1_0/BD_debouncer_1_0/BD_debouncer_1_0_in_context.xdc] for cell 'BD_i/debouncer_1'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_edge_detector_0_0/BD_edge_detector_0_0/BD_edge_detector_0_0_in_context.xdc] for cell 'BD_i/edge_detector_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_edge_detector_0_0/BD_edge_detector_0_0/BD_edge_detector_0_0_in_context.xdc] for cell 'BD_i/edge_detector_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_edge_detector_1_0/BD_edge_detector_1_0/BD_edge_detector_1_0_in_context.xdc] for cell 'BD_i/edge_detector_1'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_edge_detector_1_0/BD_edge_detector_1_0/BD_edge_detector_1_0_in_context.xdc] for cell 'BD_i/edge_detector_1'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_digilent_jstk2_0_0/BD_digilent_jstk2_0_0/BD_digilent_jstk2_0_0_in_context.xdc] for cell 'BD_i/digilent_jstk2_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_digilent_jstk2_0_0/BD_digilent_jstk2_0_0/BD_digilent_jstk2_0_0_in_context.xdc] for cell 'BD_i/digilent_jstk2_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_axi4stream_spi_master_0_0/BD_axi4stream_spi_master_0_0/BD_axi4stream_spi_master_0_0_in_context.xdc] for cell 'BD_i/axi4stream_spi_master_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_axi4stream_spi_master_0_0/BD_axi4stream_spi_master_0_0/BD_axi4stream_spi_master_0_0_in_context.xdc] for cell 'BD_i/axi4stream_spi_master_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_axis_dual_i2s_0_0/BD_axis_dual_i2s_0_0/BD_axis_dual_i2s_0_0_in_context.xdc] for cell 'BD_i/axis_dual_i2s_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_axis_dual_i2s_0_0/BD_axis_dual_i2s_0_0/BD_axis_dual_i2s_0_0_in_context.xdc] for cell 'BD_i/axis_dual_i2s_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Mute_controller_0_0/BD_Mute_controller_0_0/BD_Mute_controller_0_0_in_context.xdc] for cell 'BD_i/Mute_controller_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Mute_controller_0_0/BD_Mute_controller_0_0/BD_Mute_controller_0_0_in_context.xdc] for cell 'BD_i/Mute_controller_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Toggle_reg_0_0/BD_Toggle_reg_0_0/BD_Toggle_reg_0_0_in_context.xdc] for cell 'BD_i/Toggle_reg_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Toggle_reg_0_0/BD_Toggle_reg_0_0/BD_Toggle_reg_0_0_in_context.xdc] for cell 'BD_i/Toggle_reg_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Toggle_reg_1_0/BD_Toggle_reg_1_0/BD_Toggle_reg_1_0_in_context.xdc] for cell 'BD_i/Toggle_reg_1'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Toggle_reg_1_0/BD_Toggle_reg_1_0/BD_Toggle_reg_1_0_in_context.xdc] for cell 'BD_i/Toggle_reg_1'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_LED_controller_0_0/BD_LED_controller_0_0/BD_LED_controller_0_0_in_context.xdc] for cell 'BD_i/LED_controller_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_LED_controller_0_0/BD_LED_controller_0_0/BD_LED_controller_0_0_in_context.xdc] for cell 'BD_i/LED_controller_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Volume_controller_0_0/BD_Volume_controller_0_0/BD_Volume_controller_0_0_in_context.xdc] for cell 'BD_i/Volume_controller_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Volume_controller_0_0/BD_Volume_controller_0_0/BD_Volume_controller_0_0_in_context.xdc] for cell 'BD_i/Volume_controller_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Balance_controller_0_0/BD_Balance_controller_0_0/BD_Balance_controller_0_0_in_context.xdc] for cell 'BD_i/Balance_controller_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Balance_controller_0_0/BD_Balance_controller_0_0/BD_Balance_controller_0_0_in_context.xdc] for cell 'BD_i/Balance_controller_0'
+Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Moving_average_filter_0_0/BD_Moving_average_filter_0_0/BD_Moving_average_filter_0_0_in_context.xdc] for cell 'BD_i/Moving_average_filter_0'
+Finished Parsing XDC File [c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_Moving_average_filter_0_0/BD_Moving_average_filter_0_0/BD_Moving_average_filter_0_0_in_context.xdc] for cell 'BD_i/Moving_average_filter_0'
+Parsing XDC File [C:/Users/alija/Audio/Audio.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/Users/alija/Audio/Audio.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alija/Audio/Audio.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BD_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BD_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/alija/Audio/Audio.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/alija/Audio/Audio.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_clk_wiz_0_0/BD_clk_wiz_0_0/BD_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/alija/Audio/Audio.gen/sources_1/bd/BD/ip/BD_clk_wiz_0_0/BD_clk_wiz_0_0/BD_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/proc_sys_reset_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/debouncer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/debouncer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/edge_detector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/edge_detector_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/digilent_jstk2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/axi4stream_spi_master_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/axis_dual_i2s_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/Mute_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/Toggle_reg_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/Toggle_reg_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/LED_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/Volume_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/Balance_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for BD_i/Moving_average_filter_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1015.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1024.941 ; gain = 9.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1024.941 ; gain = 9.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1044.562 ; gain = 28.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |BD_Balance_controller_0_0    |         1|
+|2     |BD_LED_controller_0_0        |         1|
+|3     |BD_Moving_average_filter_0_0 |         1|
+|4     |BD_Mute_controller_0_0       |         1|
+|5     |BD_Toggle_reg_0_0            |         1|
+|6     |BD_Toggle_reg_1_0            |         1|
+|7     |BD_Volume_controller_0_0     |         1|
+|8     |BD_axi4stream_spi_master_0_0 |         1|
+|9     |BD_axis_dual_i2s_0_0         |         1|
+|10    |BD_clk_wiz_0_0               |         1|
+|11    |BD_debouncer_0_0             |         1|
+|12    |BD_debouncer_1_0             |         1|
+|13    |BD_digilent_jstk2_0_0        |         1|
+|14    |BD_edge_detector_0_0         |         1|
+|15    |BD_edge_detector_1_0         |         1|
+|16    |BD_proc_sys_reset_0_0        |         1|
+|17    |BD_proc_sys_reset_1_0        |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |BD_Balance_controller_0_0_bbox    |     1|
+|2     |BD_LED_controller_0_0_bbox        |     1|
+|3     |BD_Moving_average_filter_0_0_bbox |     1|
+|4     |BD_Mute_controller_0_0_bbox       |     1|
+|5     |BD_Toggle_reg_0_0_bbox            |     1|
+|6     |BD_Toggle_reg_1_0_bbox            |     1|
+|7     |BD_Volume_controller_0_0_bbox     |     1|
+|8     |BD_axi4stream_spi_master_0_0_bbox |     1|
+|9     |BD_axis_dual_i2s_0_0_bbox         |     1|
+|10    |BD_clk_wiz_0_0_bbox               |     1|
+|11    |BD_debouncer_0_0_bbox             |     1|
+|12    |BD_debouncer_1_0_bbox             |     1|
+|13    |BD_digilent_jstk2_0_0_bbox        |     1|
+|14    |BD_edge_detector_0_0_bbox         |     1|
+|15    |BD_edge_detector_1_0_bbox         |     1|
+|16    |BD_proc_sys_reset_0_0_bbox        |     1|
+|17    |BD_proc_sys_reset_1_0_bbox        |     1|
+|18    |IBUF                              |     2|
+|19    |IOBUF                             |     4|
+|20    |OBUF                              |     7|
++------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1049.320 ; gain = 33.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1049.320 ; gain = 33.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1049.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1072.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1072.176 ; gain = 56.570
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alija/Audio/Audio.runs/synth_1/BD_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BD_wrapper_utilization_synth.rpt -pb BD_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 20 20:48:31 2023...
